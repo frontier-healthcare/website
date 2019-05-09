@@ -38,10 +38,13 @@
         -webkit-transition-timing-function: ease-out;
         -webkit-transition-duration: 500ms;
         }
+  .cardpictures{
+    text-align: center;
+  }
 
   .pic2 {
         position: relative;
-        float: left;
+        float: right;
         width:  250px;
         height: 175px;
         background-position: 20% 20%;
@@ -49,6 +52,12 @@
         background-size:     cover;
         border-radius: 5%;
       }
+
+    .resp-container {
+    position: relative;
+    overflow: hidden;
+    padding-top: 56.25%;
+}
   </style>
 </head>
 
@@ -90,7 +99,7 @@
 
       <div class="pic"><img src="img/logo.png" alt="" style="width:25%; height:70%;"></div>
 
-
+    
 
 
       <h5 style="color:white;">Ryerson University | St. Michael's Hospital SRSA</h4>
@@ -111,7 +120,7 @@
         <div class="row about-container">
 
           <div class="col-lg-12 content order-lg-1 order-2">
-            <h1 style = "font-size:60px; text-align:center" >What is the conference?</h1>
+            <h1 style = "font-size:60px; text-align:center" ></h1>
 
               <h4 style = "text-align:center">The Frontier of Healthcare Conference serves to educate professionals, academics and students about the upcoming and emerging trends in the Digital Healthcare Industry.</h4>
               <hr class="my-4">
@@ -124,8 +133,8 @@
 
             <div class="icon-box wow fadeInUp">
               <div class="icon"><i class="fa fa-check"></i></div>
-              <h4 class="title">Hackathon</a></h4>
-              <p class="description">The conference includes an interdisciplinary, 24 hour Hack-a-thon, where delegates will be given the opportunity to create a solution to a problem in the digital health field.</p>
+              <h4 class="title">Case Competition</a></h4>
+              <p class="description">The conference includes an interdisciplinary case Competition where delegates will be given the opportunity to create a solution to a problem in the digital health field.</p>
             </div>
 
 
@@ -133,6 +142,12 @@
               <div class="icon"><i class="fa fa-check"></i></div>
               <h4 class="title">Workshops</a></h4>
               <p class="description">Delegates will receive the opportunity to learn valuable practical skills from Industry professionals.</p>
+            </div>
+
+            <div class="icon-box wow fadeInUp" data-wow-delay="0.4s">
+              <div class="icon"><i class="fa fa-check"></i></div>
+              <h4 class="title">Debate</a></h4>
+              <p class="description">Delegates will get the chance to pitch their ideas and rebut  perspectives to address ethical concerns in the digital healthcare industry.</p>
             </div>
 
               <div class="icon-box wow fadeInUp" data-wow-delay="0.4s">
@@ -163,10 +178,18 @@
                   <h2 style = "color:black;text-align:center;" class="display-4">JOIN</h2>
                 <br>
                 <div class="col-lg-12 content order-lg-1 order-2" style = "text-align:center">
-
-                    <h4>  We will be taking applications shortly!</h4>
+                    <h4>  We are taking applications!</h4>
                     <hr class="my-4">
+                    <br>
+
+                    <div class = "resp-container">
+                    <iframe src="https://docs.google.com/forms/d/10DLah6gGDqhEuyS130KV3E54R9RWSItg4d_pECdm9tI/viewform?edit_requested=true" width="900" height="500" align="center"></iframe>
+                  </div>
+                    <br><br><br>
+                    <h4>  Click <a href ="https://docs.google.com/forms/d/10DLah6gGDqhEuyS130KV3E54R9RWSItg4d_pECdm9tI/viewform?edit_requested=true">here</a> to go to the application page!</h4>
+
               </div>
+
             </div>
           </div>
         </div>
@@ -209,6 +232,14 @@
 
         <div class="col-lg-3 col-md-4 col-xs-6">
           <div class = "cardpictures">
+            <a href="https://ress.ca/" target="_blank" class="d-block mb-4 h-100">
+              <img style = "border-radius: 10%; height:200px; width:200px; text-align:center;" class="img-fluid img-thumbnail" src="img/ress.png" alt="">
+            </a>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-4 col-xs-6">
+          <div class = "cardpictures">
             <a href="http://stmichaelshospitalresearch.ca/future-students-trainees/research-student-association/" target="_blank" class="d-block mb-4 h-100">
               <img style = "border-radius: 10%" class="img-fluid img-thumbnail" src="img/srsa.jpg" alt="">
             </a>
@@ -226,7 +257,7 @@
         <div class="col-lg-3 col-md-4 col-xs-6">
           <div class = "cardpictures">
             <a href="http://ieeeryerson.com/" target="_blank" class="d-block mb-4 h-100">
-              <img style = "border-radius: 10%" class="img-fluid img-thumbnail" src="img/ieee.png" alt="">
+              <img style = "border-radius: 10%; height:150px" class="img-fluid img-thumbnail" src="img/ieee.png" alt="">
             </a>
           </div>
         </div>
@@ -234,7 +265,7 @@
         <div class="col-lg-3 col-md-4 col-xs-6">
           <div class = "cardpictures">
             <a href="https://www.facebook.com/becuryerson/" target="_blank" class="d-block mb-4 h-100">
-              <img style = "border-radius: 10%; height:125px;" class="img-fluid img-thumbnail" src="img/becu.png" alt="">
+              <img style = "border-radius: 10%; height:150px;" class="img-fluid img-thumbnail" src="img/becu.png" alt="">
             </a>
           </div>
         </div>
@@ -242,10 +273,45 @@
         <div class="col-lg-3 col-md-4 col-xs-6">
           <div class = "cardpictures">
             <a href="https://www.ee.ryerson.ca/~bmes/" target="_blank" class="d-block mb-4 h-100">
-              <img style = "border-radius: 10%; height:125px;" class="img-fluid img-thumbnail" src="img/bmes.jpg" alt="">
+              <img style = "border-radius: 10%; height:150px;" class="img-fluid img-thumbnail" src="img/bmes.jpg" alt="">
             </a>
           </div>
         </div>
+
+        <div class="col-lg-3 col-md-4 col-xs-6">
+          <div class = "cardpictures">
+            <a href="https://www.cmbes.ca/" target="_blank" class="d-block mb-4 h-100">
+              <img style = "border-radius: 10%; height:175px;width:300px" class="img-fluid img-thumbnail" src="img/canadianmbec.png" alt="">
+            </a>
+          </div>
+        </div>
+
+
+          <div class="col-lg-3 col-md-4 col-xs-6">
+            <div class = "cardpictures">
+              <a href="https://www.rssonline.ca/" target="_blank" class="d-block mb-4 h-100">
+                <img style = "border-radius: 10%;  width:300px;height:175px;" class="img-fluid img-thumbnail" src="img/rss.png" alt="">
+              </a>
+            </div>
+          </div>
+
+
+          <div class="col-lg-3 col-md-4 col-xs-6">
+            <div class = "cardpictures">
+              <a href="http://www.toastmasters.org/Find-a-Club/01474196-01474196" target="_blank" class="d-block mb-4 h-100">
+                <img style = "border-radius: 10%;  height:200px; width:200px" class="img-fluid img-thumbnail" src="img/ryersontoast.png" alt="">
+              </a>
+            </div>
+          </div>
+
+
+          <div class="col-lg-3 col-md-4 col-xs-6">
+            <div class = "cardpictures">
+              <a href="https://ryecscu.com/" target="_blank" class="d-block mb-4 h-100">
+                <img style = "border-radius: 10%;  height:200px; width:200px" class="img-fluid img-thumbnail" src="img/cscu.jpg" alt="">
+              </a>
+            </div>
+          </div>
 
 
       </div>

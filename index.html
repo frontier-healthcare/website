@@ -7,6 +7,8 @@
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
   <meta content="" name="keywords">
   <meta content="" name="description">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
 
   <!-- Favicons -->
   <link href="img/logo.png" rel="icon">
@@ -63,6 +65,30 @@
   .column {
     width: 100%;
   }
+}
+
+.accordion {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 20px;
+  transition: 0.4s;
+}
+
+.active, .accordion:hover {
+  background-color: #ccc;
+}
+
+.panel {
+  padding: 0 18px;
+  display: none;
+  background-color: white;
+  overflow: hidden;
 }
   </style>
 </head>
@@ -167,6 +193,7 @@
 
 
         </div>
+        <hr class="my-4">
         <br><br><br>
 
     <h2 style = "color:black;text-align:center;" class="display-4">SPEAKERS</h2><br><br>
@@ -214,7 +241,8 @@
   <a style = "text-align:center" href = "speakers.html"><button style = "text-align:center;cursor:pointer;padding:18px 70px" type="button" class="btn btn-outline-warning btn-lg">See Speakers</button></a>
 </div>
 </div>
-
+<br>
+<hr class="my-4">
     </section><!-- #about -->
 
     <!--==========================
@@ -231,15 +259,22 @@
                 <br>
                 <div class="col-lg-12 content order-lg-1 order-2" style = "text-align:center">
 
-                    <h4>Delegate Applications are now open!</h4>
+
+
+
+
+                    <div class="pic"><img src="img/price.png" alt="" style="width:90%; height:90%;border-radius:1.5%;opacity: 0.85"></div>
+
                     <hr class="my-4">
                     <br>
 
-                    <div class = "resp-container">
-                    <iframe src="https://docs.google.com/forms/d/10DLah6gGDqhEuyS130KV3E54R9RWSItg4d_pECdm9tI/viewform?edit_requested=true" width="900" height="500" align="center"></iframe>
-                  </div>
-                    <br><br><br>
                     <h4>  Click <a href ="https://docs.google.com/forms/d/10DLah6gGDqhEuyS130KV3E54R9RWSItg4d_pECdm9tI/viewform?edit_requested=true">here</a> to go to the application page!</h4>
+
+                    <br><br><br>
+
+                    <iframe src="https://docs.google.com/forms/d/10DLah6gGDqhEuyS130KV3E54R9RWSItg4d_pECdm9tI/viewform?edit_requested=true" width="900" height="500" align="center"></iframe>
+                    <br><br><br><br>
+
 
               </div>
 
@@ -380,7 +415,65 @@
       Team Section
     ============================-->
     <section id="team">
-      <div class="container wow fadeInUp">
+<div class="container wow fadeInUp">
+      <!-- FAQ ------->
+      <h2 style = "color:black;text-align:center;" class="display-4">FAQs</h2> <br><br>
+
+       <button class="accordion">What is the conference about?</button>
+       <div class="panel">
+         <br><p>The Frontier of Healthcare is a 2 day initiative focused on a central theme of Digital Health, with speakers from various streams such as Engineers, Scientists, Entrepreneurs and leaders in the medical field discussing current and growing problems in the digital health field. Building on the problems identified in the conference, delegates will be challenged to implement their solutions to these problems.</p>
+       </div>
+
+       <button class="accordion">Who can attend the conference?</button>
+       <div class="panel">
+         <br><p>Applications are open to students from any technical, scientific, and commercial program, including engineering, computer science, business, accounting, politics, nursing, science, social work, etc. Also, any university students are welcome!</p></div>
+
+       <button class="accordion">How are teams formed and how many delegates can be on a team?</button>
+       <div class="panel">
+         <br><p>Teams for the case competition are chosen prior to the submission of the delegate application, and should consist of 5 members. Similarly, teams for the debate are chosen prior to the submission of the delegate application, and should consist of 3 to 5 members.
+              <br>2 - Technical
+              <br>2 - Clinical/Science
+              <br>1 - Business/Politics</p>
+        </div>
+        <button class="accordion">Can delegates still participate in the case competition/debate if they do not have a team?</button>
+        <div class="panel">
+          <br><p>If applicants interested in participating are not on a team, they will be assigned to a group based on their selection to participate in the case competition or debate.</p>
+        </div>
+        <button class="accordion">What is the price for attending the conference?</button>
+        <div class="panel">
+          <br><p>The price for delegates to attend the conference is $15, and will be paid upon approval of their delegate application.</p></div>
+        <button class="accordion">How long are applications open?</button>
+        <div class="panel">
+          <br><p>The delegate applications for delegates are open until the end of May.</p></div>
+
+       <script>
+       var acc = document.getElementsByClassName("accordion");
+       var i;
+
+       for (i = 0; i < acc.length; i++) {
+         acc[i].addEventListener("click", function() {
+           this.classList.toggle("active");
+           var panel = this.nextElementSibling;
+           if (panel.style.display === "block") {
+             panel.style.display = "none";
+           } else {
+             panel.style.display = "block";
+           }
+         });
+       }
+       </script>
+
+       <br><br><br>
+       <hr class="my-4">
+        <br><br>
+       <p></p>
+
+
+
+
+
+      <!-- TEAM -->
+
         <div class="section-header">
           <h2 style = "color:black;text-align:center;" class="display-4">TEAM</h2>
           <!-- <h3 class="section-title">Team</h3> -->
@@ -545,6 +638,10 @@
                  <br>
                  <br>
 
+
+
+
+
                  <br>
                  <br>
                  <br>
@@ -580,6 +677,7 @@
 </div>
 </div>
 </div>
+
 </section>
 
 
@@ -601,6 +699,6 @@
 
   <!-- Template Main Javascript File -->
   <script src="js/main.js"></script>
-
+<div class="" style = "text-align:center" >Frontier of Healthcare Conference ©2019</div>
 </body>
 </html>
